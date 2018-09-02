@@ -1,0 +1,13 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build C++ project",
+            "type": "shell",
+            "command": "${env:GCC_HOME}/mingw32/bin/g++",
+            "args": [
+                "-g", "./src/hello-world.cpp", "-o", "./bld/hello-world.exe"
+            ]
+        }
+    ]
+}
