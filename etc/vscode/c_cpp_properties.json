@@ -3,6 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
+                "${env:GCC_HOME}/mingw32",
                 "${workspaceFolder}/**"
             ],
             "defines": [
