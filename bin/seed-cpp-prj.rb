@@ -12,18 +12,28 @@ def copyCppFile(logger, etcPathname, srcPathname)
 end
 
 def copyVscodeFiles(logger, etcPathname, rootPathname)
-  srcFile1Pathname = etcPathname + "vscode/c_cpp_properties.json"
-  srcFile2Pathname = etcPathname + "vscode/tasks.json"
   dstDirPathname = rootPathname + ".vscode"
   if !dstDirPathname.exist?
     logger.info("Creating directory: #{dstDirPathname}...")
     FileUtils.mkdir_p(dstDirPathname)
   end
 
+  srcFile1Pathname = etcPathname + "vscode/c_cpp_properties.json"
   logger.info("Copying file #{srcFile1Pathname}...")
   FileUtils.cp(srcFile1Pathname, dstDirPathname)
+
+  srcFile2Pathname = etcPathname + "vscode/launch.json"
   logger.info("Copying file #{srcFile2Pathname}...")
   FileUtils.cp(srcFile2Pathname, dstDirPathname)
+
+  srcFile3Pathname = etcPathname + "vscode/settings.json"
+  logger.info("Copying file #{srcFile3Pathname}...")
+  FileUtils.cp(srcFile3Pathname, dstDirPathname)
+
+  srcFile4Pathname = etcPathname + "vscode/tasks.json"
+  logger.info("Copying file #{srcFile4Pathname}...")
+  FileUtils.cp(srcFile4Pathname, dstDirPathname)
+
   logger.info("Copied files.")
 end
 

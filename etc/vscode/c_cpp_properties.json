@@ -1,24 +1,21 @@
 {
     "configurations": [
         {
-            "name": "Win32",
-            "includePath": [
-                "${env:GCC_HOME}/mingw32",
-                "${workspaceFolder}/**"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE"
-            ],
+            "name": "MinGW",
+            "intelliSenseMode": "gcc-x64",
             "compilerPath": "gcc.exe",
-            "intelliSenseMode": "clang-x64",
-            "browse": {
-                "path": [
-                    "${workspaceFolder}"
-                ],
-                "limitSymbolsToIncludedHeaders": true,
-                "databaseFilename": ""
-            }
+            "includePath": [
+                "${workspaceFolder}",
+                "${env:GCC_HOME}/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++",
+                "${env:GCC_HOME}/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32",
+                "${env:GCC_HOME}/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward",
+                "${env:GCC_HOME}/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include",
+                "${env:GCC_HOME}/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed",
+                "${env:GCC_HOME}/mingw32/i686-w64-mingw32/include"
+            ],
+            "defines": [],
+            "cStandard": "c11",
+            "cppStandard": "c++17"
         }    ],
     "version": 4
 }
