@@ -4,10 +4,12 @@ require 'pathname'
 require 'compositeLogDevice'
 
 def copyCppFile(logger, etcPathname, srcPathname)
-  srcFilePathname = etcPathname + "cpp/hello-world.cpp"
+  srcFilePathname = etcPathname + "cpp/main.cpp"
   dstDirPathname = srcPathname
+
   logger.info("Copying file #{srcFilePathname}...")
   FileUtils.cp(srcFilePathname, dstDirPathname)
+  
   logger.info("Copied file.")
 end
 

@@ -6,7 +6,7 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "-g", "./src/hello-world.cpp", "-o", "./bld/hello-world.exe"
+                "-g", "./src/*.cpp", "-o", "./bld/output.exe"
             ],
             "group": {
                 "kind": "build",
