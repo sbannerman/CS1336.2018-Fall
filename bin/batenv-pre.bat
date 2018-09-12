@@ -1,13 +1,10 @@
 rem Capture current directory so that we can change back at the end of the script
 set CURRENT_DIR=%CD%
 
-rem Allow for an alternative CPP_TOOL_DIR
-if [%CPP_TOOL_DIR%]==[] (
-  echo "Setting CPP_TOOL_DIR variable to default value"
-  set CPP_TOOL_DIR=C:\Tools\CS1336.2018-Fall\CppTool
-)
+cd /D %~dp0
+cd ..\..\CppTool
+set CPP_TOOL_DIR=%CD%
 
-rem http://weblogs.asp.net/whaggard/archive/2005/01/28/get-directory-path-of-an-executing-batch-file.aspx
 cd /D %~dp0
 cd ..
 set BASE_WORK_DIR=%CD%
