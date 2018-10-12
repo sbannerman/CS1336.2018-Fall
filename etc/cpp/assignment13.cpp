@@ -20,6 +20,9 @@ const string HEADER_ROW_2 = "Width";
 const string PROMPT_LENGTH = "Enter the length of the football field in yards and feet: ";
 const string PROMPT_WIDTH = "Enter the width of the football field in yards and feet: ";
 
+const string RESULT_PREFIX = "Area of the football field = ";
+const string RESULT_SUFFIX = " square feet.";
+
 int main()
 {
     cout << HEADER_LINE << endl;
@@ -60,7 +63,7 @@ int main()
     cout << DIVIDER_LINE << endl;
 
     int areaOfField = lengthTotal * widthTotal;
-    cout << "Area of the football field = " << areaOfField << " square feet." << endl;
+    cout << RESULT_PREFIX << areaOfField << RESULT_SUFFIX << endl;
 
     return 0;
 }
