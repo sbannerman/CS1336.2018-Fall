@@ -9,6 +9,7 @@
 using namespace std;
 
 // Constants
+
 const char BEST_RATING = 'A';
 
 const char END_OF_LINE_CHAR = '\n';
@@ -32,6 +33,8 @@ const string PROMPT_FAVORITE_SNACK = "Please enter the most favorite snack: ";
 const string PROMPT_NUMBER_OF_PEOPLE_WHO_CHOSE_TOP_CHOICES = "Please enter the number of people who voted for the most favorite products: ";
 const string PROMPT_NUMBER_OF_PEOPLE_WHO_VOTED = "Please enter the number of people voted: ";
 const string PROMPT_SECOND_BEST_RATING = "What is 2nd best rating? ";
+
+// Custom Functions
 
 string getExpertTastersOutputLine()
 {
