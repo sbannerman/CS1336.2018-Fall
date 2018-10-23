@@ -7,16 +7,15 @@ using namespace std;
 
 // Constants
 
-const string ID_LINE = "Steve Bannerman - CS 1336 - Assignment 15";
-
 const string DIVIDER_INTEREST_EARNED = "---------Interest Earned---------";
+
+const string ID_LINE = "Steve Bannerman - CS 1336 - Assignment 15";
 
 const string OUTPUT_LABEL_AMOUNT_IN_SAVINGS = "Amount in Savings:";
 const string OUTPUT_LABEL_INTEREST = "Interest:";
 const string OUTPUT_LABEL_INTEREST_RATE = "Interest Rate:";
 const string OUTPUT_LABEL_PRINCIPAL = "Principal:";
 const string OUTPUT_LABEL_TIMES_COMPOUNDED = "Times Compounded:";
-
 const int OUTPUT_PRECISION_COLUMN_2 = 2;
 const int OUTPUT_WIDTH_COLUMN_1 = 20;
 const int OUTPUT_WIDTH_COLUMN_2 = 9;
