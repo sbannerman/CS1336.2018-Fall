@@ -71,7 +71,7 @@ void displayOutputInterestRate(double interestRate)
     cout << endl;
 }
 
-void displayOutputPrinicipal(double principalAmount)
+void displayOutputPrincipal(double principalAmount)
 {
     cout << left << setw(OUTPUT_WIDTH_COLUMN_1 - 1);
     cout << OUTPUT_LABEL_PRINCIPAL;
@@ -114,7 +114,7 @@ int main()
 
     displayOutputInterestRate(interestRate);
     displayOutputTimesCompounded(compoundingPeriods);
-    displayOutputPrinicipal(principalAmount);
+    displayOutputPrincipal(principalAmount);
 
     double amountInSavings = calculateAmountInSavings(principalAmount, interestRate, compoundingPeriods);
     displayOutputAmountInSavings(amountInSavings);
