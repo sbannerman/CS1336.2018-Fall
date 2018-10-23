@@ -11,6 +11,8 @@ const string DIVIDER_INTEREST_EARNED = "---------Interest Earned---------";
 
 const string ID_LINE = "Steve Bannerman - CS 1336 - Assignment 15";
 
+const char OUTPUT_CHAR_DOLLARS = '$';
+const char OUTPUT_CHAR_PERCENT = '%';
 const string OUTPUT_LABEL_AMOUNT_IN_SAVINGS = "Amount in Savings:";
 const string OUTPUT_LABEL_INTEREST = "Interest:";
 const string OUTPUT_LABEL_INTEREST_RATE = "Interest Rate:";
@@ -40,7 +42,7 @@ void displayOutputAmountInSavings(double amountInSavings)
 {
     cout << left << setw(OUTPUT_WIDTH_COLUMN_1 - 1);
     cout << OUTPUT_LABEL_AMOUNT_IN_SAVINGS;
-    cout << "$";
+    cout << OUTPUT_CHAR_DOLLARS;
     cout << right << setw(OUTPUT_WIDTH_COLUMN_2);
     cout << setprecision(OUTPUT_PRECISION_COLUMN_2) << fixed;
     cout << amountInSavings;
@@ -51,7 +53,7 @@ void displayOutputInterest(double interest)
 {
     cout << left << setw(OUTPUT_WIDTH_COLUMN_1 - 1);
     cout << OUTPUT_LABEL_INTEREST;
-    cout << "$";
+    cout << OUTPUT_CHAR_DOLLARS;
     cout << right << setw(OUTPUT_WIDTH_COLUMN_2);
     cout << setprecision(OUTPUT_PRECISION_COLUMN_2) << fixed;
     cout << interest;
@@ -65,7 +67,7 @@ void displayOutputInterestRate(double interestRate)
     cout << right << setw(OUTPUT_WIDTH_COLUMN_2);
     cout << setprecision(OUTPUT_PRECISION_COLUMN_2) << fixed;
     cout << (100 * interestRate);
-    cout << "%";
+    cout << OUTPUT_CHAR_PERCENT;
     cout << endl;
 }
 
@@ -73,7 +75,7 @@ void displayOutputPrinicipal(double principalAmount)
 {
     cout << left << setw(OUTPUT_WIDTH_COLUMN_1 - 1);
     cout << OUTPUT_LABEL_PRINCIPAL;
-    cout << "$";
+    cout << OUTPUT_CHAR_DOLLARS;
     cout << right << setw(OUTPUT_WIDTH_COLUMN_2);
     cout << setprecision(OUTPUT_PRECISION_COLUMN_2) << fixed;
     cout << principalAmount;
