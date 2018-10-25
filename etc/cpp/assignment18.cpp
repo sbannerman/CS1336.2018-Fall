@@ -57,6 +57,11 @@ void displayResultComputerWon(string description)
     cout << description << OUTPUT_VALUE_COMPUTER_WIN << endl;
 }
 
+void displayResultInvalid()
+{
+    cout << OUTPUT_VALUE_INVALID << endl;
+}
+
 void displayResultTie()
 {
     cout << OUTPUT_VALUE_TIE << endl;
@@ -201,7 +206,7 @@ void handleUserAndComputerValuePair(int userValue, int computerValue)
     }
     else
     {
-        cout << OUTPUT_VALUE_INVALID << endl;
+        displayResultInvalid();
     }
 }
 
