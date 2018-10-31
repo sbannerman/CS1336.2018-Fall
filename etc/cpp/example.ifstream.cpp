@@ -25,8 +25,15 @@ int main(int argc, char *argv[])
     ifstream inputFileStream;
     cout << "Created input file stream." << endl;
 
+    // guard clause - file not opened
     cout << "Opening input file stream: " << inputFilePath << "..." << endl;
     inputFileStream.open(inputFilePath);
+    if (!inputFileStream)
+    {
+        cout << "Unable to open input file stream: " << inputFilePath << endl;
+        return 1;
+    }
+
     cout << "Opened input file stream." << endl;
     cout << "--" << endl;
 
