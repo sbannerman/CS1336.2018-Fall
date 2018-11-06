@@ -1,14 +1,7 @@
-#include <ctime>
 #include <fstream>
 #include <iostream>
 
 using namespace std;
-
-// Constants
-
-const string ID_LINE = "Steve Bannerman - CS 1336 - Assignment X";
-
-// Custom Functions
 
 int main(int argc, char *argv[])
 {
