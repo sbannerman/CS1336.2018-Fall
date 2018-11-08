@@ -31,6 +31,8 @@ int main()
         sumOfNumbers += nextNumber;
     }
 
+    inputFileStream.close();
+
     cout << OUTPUT_PREFIX_NUM << numOfNumbers << endl;
     cout << OUTPUT_PREFIX_SUM << sumOfNumbers << endl;
 
